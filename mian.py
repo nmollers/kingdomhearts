@@ -17,6 +17,7 @@ from tkinter import *
 
 
 window = Tk()
+window.geometry("1500x1000")
 
 
 
