@@ -4,9 +4,12 @@ import time
 import cmd
 import os
 
-stats = {"kracht":50,
-         "HP": 100,
-         "XP": 0}
+stats = {"HP": 18,
+         "mp": 2,
+         "ap" : 1,
+        "strength":50,
+        "defense" : 2
+        }
 
 
 
@@ -56,7 +59,7 @@ You see a Sword, Shield and a Magic Wand and are thinking what you should pick""
         sure = input("You picked the 'sword' are you sure?> ")
         if sure == 'yes':
             inventory.update(sword)
-            stats["kracht"] = 1
+            stats["strenght"] = 1                                                          #   needs specification 
             print("You'r stats and inventory have been changed to: --")
             print(inventory)
             print(stats)
@@ -67,7 +70,7 @@ You see a Sword, Shield and a Magic Wand and are thinking what you should pick""
         sure = input("You picked the 'shield' are you sure?> ")
         if sure == 'yes':
             inventory.update(shield)
-            stats["kracht"] = 1                                                         #   needs specification 
+            stats["strenght"] = 1                                                          #   needs specification 
             print("You'r stats and inventory have been changed to: --")
             print(inventory)
             print(stats)
@@ -79,10 +82,10 @@ You see a Sword, Shield and a Magic Wand and are thinking what you should pick""
         sure = input("You picked the 'magic wand' are you sure?> ")
         if sure == 'yes':
             inventory.update(magic_wand)
-            stats["kracht"] = 1
+            stats["strenght"] = 1
             print("You'r stats and inventory have been changed to: --")
             print(inventory)
-            print(stats)                                                                #   needs specification 
+            print(stats)                                                                   #   needs specification 
             first_fight() #Placeholder for first fight
         elif sure == 'no':
             start_game()
