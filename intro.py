@@ -8,10 +8,10 @@ def travelers_town():
     print('')
 
 def after_first_fight():
-    print('After defeating the weird creatures on the platform you see a door apearing on the platform')
-    choice = input('Do you want to go throug the door or do you want to look around on the platform?> ')
+    print('After defeating the weird creatures on the platform you see a door appearing on the platform')
+    choice = input('Do you want to go through the door or do you want to look around on the platform?> ')
     if choice == 'go':
-        print('You decided to go throug the door')
+        print('You decided to go through the door')
         travelers_town()#Placeholder for travelers town *1st world
     elif choice == 'look':
         print('You decided to look on the platform and find a christmas tree with presents underneath it.')
@@ -19,18 +19,18 @@ def after_first_fight():
 
 ### First fight with Heartless on the glass platform
 def first_fight():
-    print(f"After choosing the {'start_chocice moet hier komen'} some weird creatures start appearing on the platform")
-    print(f"You don't have a chanse to run away so you need to fight them!")
+    print(f"After choosing the {'start_choice moet hier komen'} some weird creatures start appearing on the platform")
+    print(f"You don't have a chance to run away so you need to fight them!")
     quit #Placeholder for fight system
     after_first_fight()# If player defeats the Heartless the story goes further
     first_fight()# If player gets killed in the fight he needs fight them again
 
 ### Intro of the game where player needs to make a choice between 3 items
 def start_game():
-    print("""You'r floating from the sky into a large glass platfrom where you see three different items
+    print("""You'r floating from the sky into a large glass platform where you see three different items
 You see a Sword, Shield and a Magic Wand and are thinking what you should pick""")
-    print("Make your choise between a sword, shield and magic wand")
-    start_choice = input("Whats gonne be you'r choise?> ")
+    print("Make your choice between a sword, shield and magic wand")
+    start_choice = input("Whats gonna be your choice?> ")
     if start_choice == 'sword':
         sure = input("You picked the 'sword' are you sure?> ")
         if sure == 'yes':
@@ -55,7 +55,7 @@ You see a Sword, Shield and a Magic Wand and are thinking what you should pick""
             start_game()
         ### Change stats to sword stats
     else:
-        print("please make a valid choise")
+        print("please make a valid choice")
         start_game()
 
 ### Intro if the player want's to start the game or get some help ###
