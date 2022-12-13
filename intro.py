@@ -1,6 +1,8 @@
 import sys
 import random
 import time
+import cmd
+import os
 
 def travelers_town():
     print('')
