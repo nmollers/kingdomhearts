@@ -37,7 +37,8 @@ def after_first_fight():
         travelers_town()#Placeholder for travelers town *1st world
     elif choice == 'look':
         print('You decided to look on the platform and find a christmas tree with presents underneath it.')
-        inventory["potions" : +1]
+        inventory["potions"] += 1
+        print(inventory)
         # Chest spawn needs to come here
 
 ### First fight with Heartless on the glass platform
@@ -59,7 +60,7 @@ You see a Sword, Shield and a Magic Wand and are thinking what you should pick""
         sure = input("You picked the 'sword' are you sure?> ")
         if sure == 'yes':
             inventory.update(sword)
-            stats["strenght"] = 1                                                          #   needs specification 
+            stats["strength"] += 1                                                          #   needs specification 
             print("You'r stats and inventory have been changed to: --")
             print(inventory)
             print(stats)
@@ -70,7 +71,7 @@ You see a Sword, Shield and a Magic Wand and are thinking what you should pick""
         sure = input("You picked the 'shield' are you sure?> ")
         if sure == 'yes':
             inventory.update(shield)
-            stats["strenght"] = 1                                                          #   needs specification 
+            stats["strenght"] += 1                                                          #   needs specification 
             print("You'r stats and inventory have been changed to: --")
             print(inventory)
             print(stats)
@@ -82,7 +83,7 @@ You see a Sword, Shield and a Magic Wand and are thinking what you should pick""
         sure = input("You picked the 'magic wand' are you sure?> ")
         if sure == 'yes':
             inventory.update(magic_wand)
-            stats["strenght"] = 1
+            stats["strenght"] += 1
             print("You'r stats and inventory have been changed to: --")
             print(inventory)
             print(stats)                                                                   #   needs specification 
