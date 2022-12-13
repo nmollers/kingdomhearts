@@ -5,7 +5,33 @@ import cmd
 import os
 
 def travelers_town():
-    print('')
+    print('After going throug the door you random wake up by a dog thats licking your face')
+    print('You look up and see goofy licking your face so you wake up')
+    print("After waking up you'r in a random ally in a town where you don't know the name of")
+    print("You only have the choice to go straight forward")
+    movement = input("Make you'r choice> ")
+    if movement == 'forward':
+        print("You walked out of the ally and see you'r in the middle of the town")
+        print("You see 2 little shops and 3 big doors around you")
+        choice = input("you have the choice to go to the 2 shops or the first big door> ")
+        if choice == 'first shop':
+            print('You walk in the first shop and you see a man behind the counter')
+            talk_leave = input("Want to speak to the man behind the counter or leave the shop?> ")
+            if talk_leave == 'talk':
+                print('Man: Hello there how can I help you?')
+                choice1 = input("talk or buy?> ")
+                if choice1 == 'talk':
+                    print("You: Hello there what's your name?")
+                    print("Man: I'm z")
+        elif choice == 'second shop':
+            print('You walk in the second shop where you see Huey, Dewey, and Louie standing behind the counter')
+        elif choice == 'first big door':
+            print('You decided to go throug the first big door and are now in the second district of the town')
+            print("After arriving in the second district you see a man running towards you but you don't know why he is running")
+            print("After the man has run past you you see the weird creatures you defeated earlier apparing from the shadows of the town")
+            # Fight with Heartless 
+        # If player defeats the Heartless he can go with exploring the second disctrict
+        
 
 def after_first_fight():
     print('After defeating the weird creatures on the platform you see a door appearing on the platform')
