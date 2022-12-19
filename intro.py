@@ -5,7 +5,7 @@ import cmd
 import os
 
 def travelers_town():
-    print('After going throug the door you random wake up by a dog thats licking your face')
+    print('After going through the door you random wake up by a dog thats licking your face')
     print('You look up and see goofy licking your face so you wake up')
     print("After waking up you'r in a random ally in a town where you don't know the name of")
     print("You only have the choice to go straight forward")
@@ -26,11 +26,11 @@ def travelers_town():
         elif choice == 'second shop':
             print('You walk in the second shop where you see Huey, Dewey, and Louie standing behind the counter')
         elif choice == 'first big door':
-            print('You decided to go throug the first big door and are now in the second district of the town')
+            print('You decided to go through the first big door and are now in the second district of the town')
             print("After arriving in the second district you see a man running towards you but you don't know why he is running")
-            print("After the man has run past you you see the weird creatures you defeated earlier apparing from the shadows of the town")
+            print("After the man has run past you you see the weird creatures you defeated earlier appearing from the shadows of the town")
             # Fight with Heartless 
-        # If player defeats the Heartless he can go with exploring the second disctrict
+        # If player defeats the Heartless he can go with exploring the second district
         
 
 def after_first_fight():
@@ -96,7 +96,7 @@ def intro_kingdomhearts():
     elif keuze1 == 'quit':
         quit
     else:
-        print('Please make a valid choise')
+        print('Please make a valid choice')
         keuze1 = input("Do you wan't to start paying the game or do you want some help?> ")
 
 intro_kingdomhearts()

@@ -13,16 +13,10 @@ stats = {"HP": 18,
 
 
 
-inventory = {"potions":0,
-             }
+inventory = {"potions":0}
              
-# chestFound = 0
 
 
-sword = {"first_item" : "sword"}
-shield = {"first_item" : "shield"}
-magic_wand = {"first_item" : "magic_wand"}
-# inventory["potions"] += chestFound
 
 
 
@@ -59,10 +53,8 @@ You see a Sword, Shield and a Magic Wand and are thinking what you should pick""
     if start_choice == 'sword':
         sure = input("You picked the 'sword' are you sure?> ")
         if sure == 'yes':
-            inventory.update(sword)
             stats["strength"] += 1                                                          #   needs specification 
             print("You'r stats and inventory have been changed to: --")
-            print(inventory)
             print(stats)
             first_fight() #Placeholder for first fight
         elif sure == 'no':
@@ -70,10 +62,8 @@ You see a Sword, Shield and a Magic Wand and are thinking what you should pick""
     if start_choice == 'shield':
         sure = input("You picked the 'shield' are you sure?> ")
         if sure == 'yes':
-            inventory.update(shield)
-            stats["strenght"] += 1                                                          #   needs specification 
+            stats["strength"] += 1                                                          #   needs specification 
             print("You'r stats and inventory have been changed to: --")
-            print(inventory)
             print(stats)
             first_fight() #Placeholder for first fight
         elif sure == 'no':
@@ -82,10 +72,8 @@ You see a Sword, Shield and a Magic Wand and are thinking what you should pick""
     if start_choice == 'magic wand':
         sure = input("You picked the 'magic wand' are you sure?> ")
         if sure == 'yes':
-            inventory.update(magic_wand)
-            stats["strenght"] += 1
+            stats["strength"] += 1
             print("You'r stats and inventory have been changed to: --")
-            print(inventory)
             print(stats)                                                                   #   needs specification 
             first_fight() #Placeholder for first fight
         elif sure == 'no':
