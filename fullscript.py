@@ -1,3 +1,28 @@
+def beach_puzzle():
+    print("BEACH")
+    print("""(Now your standing on the beach and have three options:
+'run along the beach'
+'go to the small treehut'
+'run to the high boards'
+'run into the sea'
+'talk to Kairi'""")
+    keuze = input("What are you gone do?> ")
+    if keuze == 'run along the beach':
+        print("You run along the beach and find a log")
+        beach_puzzle()
+    elif keuze == 'go to the small treehut':
+        print("You walk to the small threehut")
+        print("You'r standing in front of the small treehut")
+        keuze2 = input("Go 'in' or 'leave'?> ")
+        if keuze2 == 'in':
+            print("You enter the small treehouse where you find one cloth")
+            print("(After finding the cloth you leave the small threehouse)")
+            beach_puzzle()
+    elif keuze == 'run to the high boards':
+        print("You run to the hight boards")
+        print("You find a coil of rope")
+        beach_puzzle()
+        
 def beach_intro2():
     print("????: Hey!")
     print("(They turn to see a silver-haired boy carrying a log)")
@@ -10,9 +35,10 @@ to Kairi)""")
     print("""Kairi: So, can you gather the rest of the supplies? Sora, are you listening 
 to me?""")
     print("Sora: Yeah, I heard you.")
-    print("""Kairi: Okay, here's what you need to go find: Two Logs, One Cloth, One 
+    print("""Kairi: Okay, here's what you need to go find: One Logs, One Cloth, One 
 Rope. Bring everything back here. If you need help, just ask. I'm counting 
 on you!""")
+    beach_puzzle()#Placeholder
 
 ### ???
 def beach_intro():
@@ -61,8 +87,6 @@ of light and the boy wakes up)""")
     else:
         print("Please enter a valid input")
         intro_game3()
-
-
 
 ### After winning the first fight story goes further here
 def intro_after_fight():
