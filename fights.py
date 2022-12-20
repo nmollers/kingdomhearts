@@ -5,13 +5,17 @@ def introFight1():
         print("you damaged the Shadow")
         print("Choose your following move:")
         print("\nmoves : attack")
-    move2 = input("Enter what you will do; ")
-    if move2 == "attack":
-        print("You defeated the shadow.")
-        #   continues with the story
+        move2 = input("Enter what you will do; ")
+        if move2 == "attack":
+            print("You defeated the shadow.")
+            #   continues with the story
+        else:
+            print("invalid input, the fight will be reset.")
+            introFight1()
         
     else:
         print("invalid choice.")
+        introFight1()
 
 def introFight2():
     print("\nmoves : attack, block")
@@ -35,7 +39,7 @@ def introFight2():
                 introFight2()
         elif move2 == "block":
             print("You blocked the incoming attack")
-            print("\n")
+            print("\nmoves : block, attack")
             move3= input("Enter what you will do: ")
             if move3 == "attack":
                 print("You attacked the Shadow and killed it.")
@@ -46,7 +50,10 @@ def introFight2():
                 move4 = input("enter what you will do: ")
                 if move4 == "attack":
                     print("You damaged the Shadow and killed it!")
-                    #   continues with the story   
+                    #   continues with the story
+                else:
+                    print("Invalid input, the fight will be reset.")
+                    introFight2()
             else:
                 print("Invalid input, the fight will be reset.")
                 introFight2()
@@ -55,6 +62,9 @@ def introFight2():
             introFight2()
     elif move1 == "block":
         print("You blocked the incoming attack")
+        introFight2()
+    else:
+        print("invalid input, The fight will be reset")
         introFight2()
 
 def introFight3():
@@ -104,6 +114,9 @@ def introFight3():
                 if move4 == "attack" or move4 == "magic":
                     print("You attacked the Shadow and killed it!")
                     #   continues with the story
+                else:
+                    print("Invalid input, the fight will be reset.")
+                    introFight3()
             elif move3 == "magic":
                 print("You damaged the shadow")
                 print("\nMoves : attack, block, magic")
@@ -133,7 +146,7 @@ def introFight3():
             introFight3()
     elif move1 == "block":
         print("You blocked the incoming attack")
-        introFight2()
+        introFight3()
 
 def restFights():
     pass
