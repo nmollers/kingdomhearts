@@ -1,4 +1,156 @@
+import os
+#Fight systems
+def introFight1():
+    print("moves : attack")
+    move1 = input("Enter what you will do: ")
+    if move1 == "attack":
+        print("you damaged the Shadow")
+        print("Choose your following move:")
+        print("\nmoves : attack")
+        move2 = input("Enter what you will do?> ")
+        if move2 == "attack":
+            print("You defeated the shadow.")
+            intro_after_fight()
+        else:
+            print("invalid input, the fight will be reset.")
+            introFight1()        
+    else:
+        print("invalid choice.")
+        introFight1()
+
+def introFight2():
+    print("\nmoves : attack, block")
+    move1 = input("Enter what you will do?> ")
+    if move1 == "attack":
+        print("you damaged the Shadow")
+        print("\nmoves : attack, block")
+        move2 = input("Enter what you will do?> ")
+        if move2 == "attack":
+            print("You damaged the Shadow")
+            print("\nmoves : attack, block")
+            move3= input("Enter what you will do?> ")
+            if move3 == "attack":
+                print("You attacked the Shadow and killed it.")
+                #   continues with the story
+            elif move3 == "block":
+                print("You blocked the incoming attack, attack him once to kill it.") 
+                print("\nMoves : attack")  
+            else:
+                print("invalid input, the fight will be reset.")
+                introFight2()
+        elif move2 == "block":
+            print("You blocked the incoming attack")
+            print("\nmoves : block, attack")
+            move3= input("Enter what you will do: ")
+            if move3 == "attack":
+                print("You attacked the Shadow and killed it.")
+                #   continues with the story
+            elif move3 == "block":
+                print("You blocked the incoming attack, attack him once to kill it.") 
+                print("\nMoves : attack")
+                move4 = input("enter what you will do: ")
+                if move4 == "attack":
+                    print("You damaged the Shadow and killed it!")
+                    #   continues with the story
+                else:
+                    print("Invalid input, the fight will be reset.")
+                    introFight2()
+            else:
+                print("Invalid input, the fight will be reset.")
+                introFight2()
+        else:
+            print("invalid input, the fight will be reset.")
+            introFight2()
+    elif move1 == "block":
+        print("You blocked the incoming attack")
+        introFight2()
+    else:
+        print("invalid input, The fight will be reset")
+        introFight2()
+
+def introFight3():
+    print("\nmoves : attack, block, magic")
+    move1 = input("Enter what you will do?> ")
+    if move1 == "attack" or move1 == "magic":
+        print("you damaged the Shadow")
+        print("\nmoves : attack, block, magic")
+        move2 = input("Enter what you will do?> ")
+        if move2 == "attack":
+            print("You damaged the Shadow")
+            print("\nmoves : attack, block, magic")
+            move3= input("Enter what you will do?> ")
+            if move3 == "attack":
+                print("You attacked the Shadow and killed it.")
+                #   continues with the story
+            elif move3 == "block":
+                print("You blocked the incoming attack, attack him once to kill it.") 
+                print("\nMoves : attack")  
+            else:
+                print("invalid input, the fight will be reset.")
+                introFight3()
+        elif move2 == "block":
+            print("You blocked the incoming attack")
+            print("\n")
+            move3= input("Enter what you will do: ")
+            if move3 == "attack":
+                print("You attacked the Shadow and killed it.")
+                #   continues with the story
+            elif move3 == "block":
+                print("You blocked the incoming attack, attack it once to kill it.") 
+                print("\nMoves : attack")   
+            else:
+                print("Invalid input, the fight will be reset.")
+                introFight3()
+        elif move2 == "magic":
+            print("You damaged the shadow")
+            print("\nmoves : attack, block, magic")
+            move3 = input("Enter what you will do?> ")
+            if move3 == "attack":
+                print("you damaged the Shadow and killed it!")
+                #   continues with the story
+            elif move3 == "block":
+                print("you blocked the incoming attack, attack now!")
+                print("\nmoves : attack, magic")
+                move4 = input("Enter what you will do: ")
+                if move4 == "attack" or move4 == "magic":
+                    print("You attacked the Shadow and killed it!")
+                    #   continues with the story
+                else:
+                    print("Invalid input, the fight will be reset.")
+                    introFight3()
+            elif move3 == "magic":
+                print("You damaged the shadow")
+                print("\nMoves : attack, block, magic")
+                move4 == input("Enter what you will do: ")
+                if move4 == "attack" or move4 == "magic":
+                    print("You damaged the Shadow and killed it!")
+                    #   continues with the story
+                elif move4 == "block":
+                    print("you blocked the attack, attack it once to kill it")
+                    print("\nmoves : attack, magic")
+                    move5 = input("Enter what you will do: ")
+                    if move5 == "attack" or move5 == "magic":
+                        print("You damaged the Shadow and killed it")
+                        #   continues with the story
+                    else:
+                        print("Invalid input, the fight will be reset.")
+                        introFight3()
+                else:
+                    print("Invalid input, the fight will be reset.")
+                    introFight3()
+            else:
+                print("Invalid input, the fight will be reset")
+                introFight3()
+        else:
+            print("invalid input, the fight will be reset.")
+            introFight3()
+    elif move1 == "block":
+        print("You blocked the incoming attack")
+        introFight3()
+#End Fight Systems
+
 def toy_factory():
+    os.system('cls')
     print("""(They run to the second floor
 Wrapping Room and find Lock, Shock, and Barrel in amongst the toys)""")
     print("Shock: No!")
@@ -35,6 +187,7 @@ good are they?""")
     print("Lock: There's nothing fun here. Let's go back to Halloween Town!")
 
 def inside_santa_home():
+    os.system('cls')
     print("(They walk in santa's house")
     print("Santa: Oh!")
     print("(They place them on the table)")
@@ -51,7 +204,6 @@ stolen.""")
 then we'll just have to find out who really did it!""")
     print("Santa: Very well, I'll leave it to you.")
     print("Jack: All right, Sora, Donald, Goofy! We're off!")
-
     print("""(He points to the door and starts to leave. Sora, Donald, and Goofy slump in
 defeat. They hear a crash from the Toy Factory.)""")
     keuze1 = input("Run to the Toy Factory?> ")
@@ -63,6 +215,7 @@ defeat. They hear a crash from the Toy Factory.)""")
         inside_santa_home()
 
 def snow_world_intro():
+    os.system('cls')
     print("After waking up you wake up in the middle of a snow world")
     print("(Jack, still in his Sandy Claws outfit, is picking you up)")
     print("""Jack: Perfect timing, gentlemen! Lend me a hand, won't you? These presents must
@@ -88,6 +241,7 @@ Come on. We've got work to do!""")
             inside_santa_home()
 
 def intro_game3():
+    os.system('cls')
     print("(You turns around and a large crate and barrel appear.")
     smash = input("Do you 'smash' the crate and barrel or 'leave' them?> ")
     if smash == 'smash':
@@ -103,6 +257,7 @@ of light and the boy wakes up)""")
 
 ### After winning the first fight story goes further here
 def intro_after_fight():
+    os.system('cls')
     print("""(The boy defeats all of the Shadows. A black void appears in the center of 
 the platform and he is sucked into it. He bats the darkness away and wakes 
 up on a multicolored platform with three silhouettes. He sees a door near 
@@ -132,6 +287,7 @@ the platform edge)""")
 
 ### First fight after making the first choise
 def intro_game2():
+    os.system('cls')
     print("""(The three stones suddenly sink into the floor, knocking the boy back 
 onto the platform. The ground rumbles and he looks around. The edges 
 of the platform crumble off and the platform shatters. The boy falls 
@@ -143,8 +299,7 @@ girl in a beautiful silver ball gown. The staff appears in his hand)""")
 others.""")
     print("(Shadows appear)")
     print("Voice: There will be times you have to fight. Keep your light burning strong.")
-    ### Fight with the shadows needs to come here after winning story continues otherwise repeat the fight
-    intro_after_fight()#placeholder
+    introFight1()
 
 ### First choise of the player that change the player stats
 def choises_intro_game():
@@ -187,6 +342,7 @@ destruction. Is this the power you seek?> """)
 
 ### Game intro
 def intro_game():
+    os.system('cls')
     print("""(The clouds part and the words rush the screen. A boy awakes, floating 
 in a strange abyss, the keychain around his neck waving in the current 
 of wind blowing upwards. Gold letters appear in the void)""")
@@ -245,6 +401,7 @@ sword appears in midair)""")
             
 ### Intro if the player want's to start the game or get some help ###
 def intro_kingdomhearts():
+    os.system('cls')
     print('Welcome to Text-Based Kingdom Hearts!')
     keuze1 = input("Do you wan't to start playing the game, quit or do you want some help?> ")
     if keuze1 == 'play':
