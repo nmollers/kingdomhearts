@@ -148,10 +148,7 @@ def introFight3():
         print("You blocked the incoming attack")
         introFight3()
 
-def restFights():
-    pass
 
-
-# introFight1()
-# introFight2()
+introFight1()
+introFight2()
 introFight3()
