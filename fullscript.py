@@ -1,86 +1,99 @@
-def beach_puzzle():
-    print("BEACH")
-    print("""(Now your standing on the beach and have three options:
-'run along the beach'
-'go to the small treehut'
-'run to the high boards'
-'run into the sea'
-'talk to Kairi'""")
-    keuze = input("What are you gone do?> ")
-    if keuze == 'run along the beach':
-        print("You run along the beach and find a log")
-        beach_puzzle()
-    elif keuze == 'go to the small treehut':
-        print("You walk to the small threehut")
-        print("You'r standing in front of the small treehut")
-        keuze2 = input("Go 'in' or 'leave'?> ")
-        if keuze2 == 'in':
-            print("You enter the small treehouse where you find one cloth")
-            print("(After finding the cloth you leave the small threehouse)")
-            beach_puzzle()
-    elif keuze == 'run to the high boards':
-        print("You run to the hight boards")
-        print("You find a coil of rope")
-        beach_puzzle()
-        
-def beach_intro2():
-    print("????: Hey!")
-    print("(They turn to see a silver-haired boy carrying a log)")
-    print("""Riku: Aren't you guys forgetting about me? So, I guess I'm the only one 
-working on the raft.""")
-    print("""(He tosses the log to Sora, who falls over with a yelp, and walks over 
-to Kairi)""")
-    print("Riku: And you're just as lazy as he is!")
-    print("Kairi (giggling): So you noticed. Okay, we'll finish it together.")
-    print("""Kairi: So, can you gather the rest of the supplies? Sora, are you listening 
-to me?""")
-    print("Sora: Yeah, I heard you.")
-    print("""Kairi: Okay, here's what you need to go find: One Logs, One Cloth, One 
-Rope. Bring everything back here. If you need help, just ask. I'm counting 
-on you!""")
-    beach_puzzle()#Placeholder
+def toy_factory():
+    print("""(They run to the second floor
+Wrapping Room and find Lock, Shock, and Barrel in amongst the toys)""")
+    print("Shock: No!")
+    print("(Lock tosses away a sailboat. Barrel looks at a stuffed bear)")
+    print("Barrel: This looks good.")
+    print("Shock: No!")
+    print("Lock: Boooring!")
+    print("(Barrel tosses the bear away)")
+    print("Lock: This one?")
+    print("Shock: No!")
+    print("Barrel: No way!")
+    print("Donald: Hey!")
+    print("(The three miscreants look up and see them)")
+    print('Sora: So YOU three took them!')
+    print("Shock: Took what?")
+    print("""Jack: You stole the presents, didn't you!""")
+    print("Lock: It wasn't us!")
+    print("Barrel: But...")
+    print("Shock (taking off her mask): It really sounds like fun!")
+    print("(She puts her mask back on and they start to run away)")
+    print("Lock, Shock, & Barrel: Run for it!")
+    print("(Sora quickly locks the kids in boxes, then interrogates them)")
+    print("Sora: Where'd you put the presents?")
+    print("Shock: We told you! We don't have 'em!")
+    print("Donald: Then why are you in here!?")
+    print("Lock: We're looking for parts for the experiment.")
+    print("Jack: Experiment?")
+    print("Lock: Dr. Finkelstein's making us a friend!")
+    print("Barrel: One we get to boss around!")
+    print("Jack: It's true the doctor's been hard at work making SOMETHING lately...")
+    print("""Lock: Besides, Christmas presents are boring. Not scary or gross... So what
+good are they?""")
+    print("Barrel: Yeah!")
+    print("Lock: There's nothing fun here. Let's go back to Halloween Town!")
 
-### ???
-def beach_intro():
-    print("""(You wake up on a bright sandy beach, the sun shines warmly on the same spiky-haired 
-boy, who opens his sleepy eyes and sits up. He yawns, starting to lay back 
-down again, when suddenly: a girl’s face)""")
-    print("????: Whoa!")
-    print("""(The boy jumps back up and turns around, kneeling in the sand. The girl 
-giggles, hovering over him)""")
-    print("????: Gimme a break, Kairi.")
-    print("Kairi: Sora, you lazy bum. I knew that I'd find you snoozing down here.")
-    print("""Sora: No! This huge, black THING swallowed me up! I couldn't breathe! I couldn't--""")
-    print("(She smacks you)")
-    response = input("After smacking you in the face what is your response? 'Ow!'/'Why'> ")
-    if response == 'Ow!':
-        print("Sora: Ow!")
-        print("Kairi: Are you still dreaming?")
-        print("Sora: It wasn't a dream! Or was it? I don't know.")
-        print("(He looks off toward the ocean, seeing the clouds billow in the sky)")
-        print("Sora: What was that place? So bizarre...")
-        print("Kairi: Yeah, sure.")
-        beach_intro2()#Placeholder
-    elif response == 'Why':
-        print("Sora: Why did you do that?")
-        print("Kairi: To see if you are still dreaming?")
-        print("Sora: It wasn't a dream! Or was it? I don't know.")
-        print("(He looks off toward the ocean, seeing the clouds billow in the sky)")
-        print("Sora: What was that place? So bizarre...")
-        print("Kairi: Yeah, sure.")
-        beach_intro2()#Placeholder
+def inside_santa_home():
+    print("(They walk in santa's house")
+    print("Santa: Oh!")
+    print("(They place them on the table)")
+    print("Santa: Wherever did you find these?")
+    print("(He takes the present from Jack's hands)")
+    print("Jack: In Halloween Town. You'll be needing them for Christmas, right, Sandy?")
+    print("""Santa: Of course. But these are just a few of the Christmas presents that were
+stolen.""")
+    print("Sora: Stolen!?")
+    print("(They look at Jack, who scratches his head)")
+    print("Jack: Oh, Sandy... You don't think it was ME?")
+    print("Santa: Still wearing the outfit, I see.")
+    print("""Jack: I just thought I'd dress for the occasion. But if you don't believe me,
+then we'll just have to find out who really did it!""")
+    print("Santa: Very well, I'll leave it to you.")
+    print("Jack: All right, Sora, Donald, Goofy! We're off!")
+
+    print("""(He points to the door and starts to leave. Sora, Donald, and Goofy slump in
+defeat. They hear a crash from the Toy Factory.)""")
+    keuze1 = input("Run to the Toy Factory?> ")
+    if keuze1 == 'yes':
+        toy_factory()
+    elif keuze1 == 'no':
+        toy_factory()
     else:
-        print("Please enter a valid input")
-        beach_intro()
+        inside_santa_home()
 
-### ???
+def snow_world_intro():
+    print("After waking up you wake up in the middle of a snow world")
+    print("(Jack, still in his Sandy Claws outfit, is picking you up)")
+    print("""Jack: Perfect timing, gentlemen! Lend me a hand, won't you? These presents must
+belong to Sandy Claws. So I thought I'd better return them.""")
+    print("Sora (crossing his arms): You just happened to find them?")
+    print("Jack: Of course, Sora. I'm finished with Christmas fantasies. You know that.")
+    print("Sora: But...You thought you'd hold on to the suit?")
+    print("""Jack: What, this? It's just a costume. And Sally worked so very hard making it!
+Come on. We've got work to do!""")
+    print("(They walk to Santa's House with the presents)")
+    keuze1 = input("Want to go in the house of Santa or search around his house?> ")
+    if keuze1 == 'go in':
+        inside_santa_home()
+    elif keuze1 == 'search':
+        print("You find a christmas tree with some presents underneath it")
+        keuze2 = input("Want to open the presents?> ")
+        if keuze2 == 'yes':
+            print("You found a potion in a present")
+            #Add potion to inventory
+            inside_santa_home()
+        elif keuze2 == 'no':
+            print("You decid to leave the presents")
+            inside_santa_home()
+
 def intro_game3():
     print("(You turns around and a large crate and barrel appear.")
     smash = input("Do you 'smash' the crate and barrel or 'leave' them?> ")
     if smash == 'smash':
         print("""(After smashing the items the door opens where there is a flash
 of light and the boy wakes up)""")
-        beach_intro()#Placeholder
+        snow_world_intro()
     elif smash == 'leave':
         print('There is nothing to do smash the items!')
         intro_game3()
