@@ -54,9 +54,8 @@ You see a Sword, Shield and a Magic Wand and are thinking what you should pick""
     if start_choice == 'sword':
         sure = input("You picked the 'sword' are you sure?> ")
         if sure == 'yes':
-            inventory.update(sword)
             stats["kracht"] = 1
-            print("You'r stats and inventory have been changed to: --")
+            print("You'r stats have been changed to: --")
             print(inventory)
             print(stats)
             first_fight() #Placeholder for first fight
@@ -65,9 +64,8 @@ You see a Sword, Shield and a Magic Wand and are thinking what you should pick""
     if start_choice == 'shield':
         sure = input("You picked the 'shield' are you sure?> ")
         if sure == 'yes':
-            inventory.update(shield)
             stats["kracht"] = 1                                                         #   needs specification 
-            print("You'r stats and inventory have been changed to: --")
+            print("You'r stats have been changed to: --")
             print(inventory)
             print(stats)
             first_fight() #Placeholder for first fight
@@ -77,9 +75,8 @@ You see a Sword, Shield and a Magic Wand and are thinking what you should pick""
     if start_choice == 'magic wand':
         sure = input("You picked the 'magic wand' are you sure?> ")
         if sure == 'yes':
-            inventory.update(magic_wand)
             stats["kracht"] = 1
-            print("You'r stats and inventory have been changed to: --")
+            print("You'r stats have been changed to: --")
             print(inventory)
             print(stats)                                                                #   needs specification 
             first_fight() #Placeholder for first fight
