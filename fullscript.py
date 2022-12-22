@@ -215,8 +215,7 @@ defeat. They hear a crash from the Toy Factory.)""")
         inside_santa_home()
 
 def snow_world_intro():
-    os.system('cls')
-    print("After waking up you wake up in the middle of a snow world")
+    print("(After waking up you wake up in the middle of a snow world)")
     print("(Jack, still in his Sandy Claws outfit, is picking you up)")
     print("""Jack: Perfect timing, gentlemen! Lend me a hand, won't you? These presents must
 belong to Sandy Claws. So I thought I'd better return them.""")
@@ -241,7 +240,6 @@ Come on. We've got work to do!""")
             inside_santa_home()
 
 def intro_game3():
-    os.system('cls')
     print("(You turns around and a large crate and barrel appear.")
     smash = input("Do you 'smash' the crate and barrel or 'leave' them?> ")
     if smash == 'smash':
@@ -257,7 +255,6 @@ of light and the boy wakes up)""")
 
 ### After winning the first fight story goes further here
 def intro_after_fight():
-    os.system('cls')
     print("""(The boy defeats all of the Shadows. A black void appears in the center of 
 the platform and he is sucked into it. He bats the darkness away and wakes 
 up on a multicolored platform with three silhouettes. He sees a door near 
@@ -322,7 +319,7 @@ repel all. Is this the power you seek?> """)
 ruin. Is this the power you seek?> """)
         if confurm == 'yes':
             print("(Suddenly, the staff vanished from his hand)")
-            intro_game2()#placeholder
+            intro_game2()
         elif confurm == 'no':
             choises_intro_game()
         else:
@@ -402,7 +399,7 @@ sword appears in midair)""")
 ### Intro if the player want's to start the game or get some help ###
 def intro_kingdomhearts():
     os.system('cls')
-    print('Welcome to Text-Based Kingdom Hearts!')
+    print('Welcome to Text-Based Kingdom Hearts Pre-Alpha!') 
     keuze1 = input("Do you wan't to start playing the game, quit or do you want some help?> ")
     if keuze1 == 'play':
         intro_game()    
